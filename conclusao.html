@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Próximos Passos</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <style>
+        .slide-container {
+            width: 1280px;
+            min-height: 720px;
+            background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            padding: 60px;
+        }
+        .title {
+            font-size: 3rem;
+            font-weight: 800;
+            color: #1e40af;
+            text-align: center;
+            margin-bottom: 50px;
+        }
+        .content-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 40px;
+            flex: 1;
+            align-items: center;
+        }
+        .summary-card {
+            background: white;
+            border-radius: 20px;
+            padding: 30px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            border-left: 6px solid #3b82f6;
+        }
+        .summary-card h3 {
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: #1e40af;
+            margin-bottom: 15px;
+        }
+        .summary-card ul {
+            list-style: none;
+            padding-left: 0;
+        }
+        .summary-card li {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+            font-size: 1.1rem;
+            color: #374151;
+        }
+        .summary-card li i {
+            color: #3b82f6;
+            margin-right: 10px;
+            font-size: 1.2rem;
+        }
+        .next-steps-card {
+            background: linear-gradient(135deg, #3b82f6, #1d4ed8);
+            color: white;
+            border-radius: 20px;
+            padding: 30px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+        .next-steps-card h3 {
+            font-size: 1.8rem;
+            font-weight: 700;
+            margin-bottom: 15px;
+        }
+        .next-steps-card p {
+            font-size: 1.1rem;
+            line-height: 1.6;
+            opacity: 0.9;
+            margin-bottom: 20px;
+        }
+        .next-steps-card .icon-large {
+            font-size: 4rem;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="slide-container">
+        <h1 class="title">Próximos Passos</h1>
+        
+        <div class="content-grid">
+            <div class="summary-card">
+                <h3>O que aprendemos hoje:</h3>
+                <ul>
+                    <li><i class="fas fa-check-circle"></i> Componentes do computador (Hardware e Software)</li>
+                    <li><i class="fas fa-check-circle"></i> Navegação no Sistema Operacional</li>
+                    <li><i class="fas fa-check-circle"></i> Gerenciamento de arquivos e pastas</li>
+                    <li><i class="fas fa-check-circle"></i> Atalhos de teclado essenciais</li>
+                    <li><i class="fas fa-check-circle"></i> Metodologia LEIA para resolução de problemas</li>
+                </ul>
+            </div>
+            
+            <div class="next-steps-card">
+                <i class="fas fa-arrow-right icon-large"></i>
+                <h3>Preparado para a próxima aula?</h3>
+                <p>
+                    Na próxima sexta-feira, vamos mergulhar no mundo da internet: 
+                    como navegar com segurança, pesquisar de forma eficiente e 
+                    usar o e-mail como uma ferramenta profissional.
+                </p>
+                <p>
+                    Não se esqueça de praticar os exercícios de hoje!
+                </p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+

@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade Prática - Aula 1</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <style>
+        .slide-container {
+            width: 1280px;
+            min-height: 720px;
+            background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            padding: 60px;
+        }
+        .title {
+            font-size: 3rem;
+            font-weight: 800;
+            color: #1e40af;
+            text-align: center;
+            margin-bottom: 50px;
+        }
+        .activity-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 40px;
+            flex: 1;
+        }
+        .activity-card {
+            background: white;
+            border-radius: 20px;
+            padding: 30px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            border-left: 6px solid #3b82f6;
+            display: flex;
+            flex-direction: column;
+        }
+        .activity-card h3 {
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: #1e40af;
+            margin-bottom: 15px;
+        }
+        .activity-card p {
+            font-size: 1.1rem;
+            color: #374151;
+            line-height: 1.6;
+            margin-bottom: 10px;
+        }
+        .activity-list {
+            list-style: none;
+            padding-left: 0;
+        }
+        .activity-list li {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 10px;
+            font-size: 1.1rem;
+            color: #374151;
+        }
+        .activity-list li i {
+            color: #3b82f6;
+            margin-right: 10px;
+            font-size: 1.2rem;
+            margin-top: 4px;
+        }
+        .tip-box {
+            background: #e0e7ff;
+            border-radius: 15px;
+            padding: 20px;
+            margin-top: 20px;
+            color: #1e40af;
+            font-weight: 600;
+            display: flex;
+            align-items: center;
+        }
+        .tip-box i {
+            font-size: 1.5rem;
+            margin-right: 15px;
+        }
+    </style>
+</head>
+<body>
+    <div class="slide-container">
+        <h1 class="title">Atividade Prática</h1>
+        
+        <div class="activity-grid">
+            <div class="activity-card">
+                <h3>Exercício 1: Organizando sua Pasta de Estudos</h3>
+                <p>Vamos colocar em prática o que aprendemos sobre gerenciamento de arquivos!</p>
+                <ul class="activity-list">
+                    <li><i class="fas fa-check-circle"></i> Crie uma pasta na área de trabalho: <strong>"Meus Estudos TI"</strong></li>
+                    <li><i class="fas fa-check-circle"></i> Dentro dela, crie 3 subpastas: <strong>"Aula 1 - SO"</strong>, <strong>"Aula 2 - Internet"</strong>, <strong>"Projetos"</strong></li>
+                    <li><i class="fas fa-check-circle"></i> Crie um arquivo de texto simples (Bloco de Notas) e salve na pasta <strong>"Aula 1 - SO"</strong></li>
+                    <li><i class="fas fa-check-circle"></i> Pratique copiando e movendo o arquivo entre as pastas</li>
+                    <li><i class="fas fa-check-circle"></i> Renomeie o arquivo para <strong>"Minha Primeira Atividade"</strong></li>
+                </ul>
+                <div class="tip-box">
+                    <i class="fas fa-lightbulb"></i>
+                    <p><strong>Dica Importante:</strong> Sempre mantenha seus arquivos organizados. Uma boa organização economiza muito tempo no futuro!</p>
+                </div>
+            </div>
+            
+            <div class="activity-card">
+                <h3>Exercício 2: Explorando Atalhos</h3>
+                <p>Teste os atalhos de teclado que você aprendeu e sinta a diferença na agilidade!</p>
+                <ul class="activity-list">
+                    <li><i class="fas fa-check-circle"></i> Abra um documento de texto ou o Bloco de Notas.</li>
+                    <li><i class="fas fa-check-circle"></i> Digite algumas frases.</li>
+                    <li><i class="fas fa-check-circle"></i> Use <strong>Ctrl + C</strong> e <strong>Ctrl + V</strong> para copiar e colar texto.</li>
+                    <li><i class="fas fa-check-circle"></i> Use <strong>Ctrl + X</strong> e <strong>Ctrl + V</strong> para recortar e colar texto.</li>
+                    <li><i class="fas fa-check-circle"></i> Use <strong>Ctrl + Z</strong> para desfazer uma ação.</li>
+                    <li><i class="fas fa-check-circle"></i> Use <strong>Ctrl + S</strong> para salvar seu documento.</li>
+                    <li><i class="fas fa-check-circle"></i> Experimente <strong>Alt + Tab</strong> para alternar entre programas.</li>
+                </ul>
+                <div class="tip-box">
+                    <i class="fas fa-star"></i>
+                    <p><strong>Desafio:</strong> Tente fazer todas as operações sem usar o mouse!</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+

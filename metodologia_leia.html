@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Metodologia LEIA</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <style>
+        .slide-container {
+            width: 1280px;
+            min-height: 720px;
+            background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            padding: 60px;
+        }
+        .title {
+            font-size: 3rem;
+            font-weight: 800;
+            color: #1e40af;
+            text-align: center;
+            margin-bottom: 50px;
+        }
+        .leia-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 30px;
+            flex: 1;
+            align-items: start;
+        }
+        .leia-card {
+            background: white;
+            border-radius: 20px;
+            padding: 30px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100%;
+        }
+        .leia-letter {
+            background: linear-gradient(135deg, #3b82f6, #1d4ed8);
+            color: white;
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 3rem;
+            font-weight: 800;
+            margin-bottom: 20px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        }
+        .leia-word {
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: #1e40af;
+            margin-bottom: 10px;
+        }
+        .leia-description {
+            font-size: 1.1rem;
+            color: #374151;
+            line-height: 1.6;
+        }
+        .quote-box {
+            background: #e0e7ff;
+            border-radius: 15px;
+            padding: 25px;
+            margin-top: 40px;
+            text-align: center;
+            color: #1e40af;
+            font-size: 1.3rem;
+            font-style: italic;
+            font-weight: 600;
+        }
+        .quote-box i {
+            margin-right: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="slide-container">
+        <h1 class="title">Metodologia LEIA</h1>
+        
+        <div class="leia-grid">
+            <div class="leia-card">
+                <div class="leia-letter">L</div>
+                <h3 class="leia-word">Leia</h3>
+                <p class="leia-description">
+                    A mensagem de erro, o problema, a documentação. Leia tudo com atenção!
+                </p>
+            </div>
+            
+            <div class="leia-card">
+                <div class="leia-letter">E</div>
+                <h3 class="leia-word">Entenda</h3>
+                <p class="leia-description">
+                    O contexto do que você estava fazendo quando o erro ocorreu. Qual o objetivo?
+                </p>
+            </div>
+            
+            <div class="leia-card">
+                <div class="leia-letter">I</div>
+                <h3 class="leia-word">Identifique</h3>
+                <p class="leia-description">
+                    Palavras-chave, termos técnicos e padrões que podem indicar a causa do problema.
+                </p>
+            </div>
+            
+            <div class="leia-card">
+                <div class="leia-letter">A</div>
+                <h3 class="leia-word">Aja</h3>
+                <p class="leia-description">
+                    De forma sistemática: pesquise, teste uma solução por vez e documente o que funcionou.
+                </p>
+            </div>
+        </div>
+        
+        <div class="quote-box">
+            <i class="fas fa-quote-left"></i>
+            "A maioria dos erros em TI podem ser resolvidos com uma boa leitura e interpretação!"
+            <i class="fas fa-quote-right"></i>
+        </div>
+    </div>
+</body>
+</html>
+

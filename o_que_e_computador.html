@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>O que é um Computador?</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <style>
+        .slide-container {
+            width: 1280px;
+            min-height: 720px;
+            background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            padding: 60px;
+        }
+        .title {
+            font-size: 3rem;
+            font-weight: 800;
+            color: #1e40af;
+            text-align: center;
+            margin-bottom: 50px;
+        }
+        .content-area {
+            display: flex;
+            gap: 60px;
+            align-items: center;
+            flex: 1;
+        }
+        .left-content {
+            flex: 1;
+        }
+        .definition-box {
+            background: white;
+            border-radius: 20px;
+            padding: 40px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            border-left: 6px solid #3b82f6;
+            margin-bottom: 30px;
+        }
+        .definition-text {
+            font-size: 1.3rem;
+            color: #374151;
+            line-height: 1.7;
+            margin-bottom: 20px;
+        }
+        .highlight {
+            color: #1e40af;
+            font-weight: 700;
+        }
+        .analogy-box {
+            background: linear-gradient(135deg, #3b82f6, #1d4ed8);
+            color: white;
+            border-radius: 20px;
+            padding: 30px;
+            text-align: center;
+        }
+        .analogy-title {
+            font-size: 1.5rem;
+            font-weight: 700;
+            margin-bottom: 15px;
+        }
+        .analogy-text {
+            font-size: 1.1rem;
+            opacity: 0.9;
+        }
+        .right-content {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .computer-visual {
+            background: white;
+            border-radius: 20px;
+            padding: 40px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            text-align: center;
+            width: 100%;
+        }
+        .computer-icon {
+            font-size: 8rem;
+            color: #3b82f6;
+            margin-bottom: 30px;
+        }
+        .components-list {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 15px;
+            margin-top: 30px;
+        }
+        .component-item {
+            background: #f1f5f9;
+            padding: 15px;
+            border-radius: 10px;
+            text-align: center;
+            font-weight: 600;
+            color: #1e40af;
+        }
+        .component-icon {
+            font-size: 1.5rem;
+            margin-bottom: 8px;
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <div class="slide-container">
+        <h1 class="title">O que é um Computador?</h1>
+        
+        <div class="content-area">
+            <div class="left-content">
+                <div class="definition-box">
+                    <p class="definition-text">
+                        Um computador é uma <span class="highlight">máquina eletrônica</span> capaz de processar informações de forma <span class="highlight">rápida e precisa</span>.
+                    </p>
+                    <p class="definition-text">
+                        É como ter um assistente super inteligente que nunca se cansa e pode fazer milhares de cálculos por segundo!
+                    </p>
+                </div>
+                
+                <div class="analogy-box">
+                    <h3 class="analogy-title">
+                        <i class="fas fa-lightbulb mr-2"></i>
+                        Analogia
+                    </h3>
+                    <p class="analogy-text">
+                        O computador é como uma pessoa muito inteligente e rápida que precisa de instruções muito detalhadas para fazer qualquer tarefa.
+                    </p>
+                </div>
+            </div>
+            
+            <div class="right-content">
+                <div class="computer-visual">
+                    <i class="fas fa-desktop computer-icon"></i>
+                    <h3 style="font-size: 1.5rem; color: #1e40af; margin-bottom: 20px;">Componentes Principais</h3>
+                    
+                    <div class="components-list">
+                        <div class="component-item">
+                            <i class="fas fa-tv component-icon"></i>
+                            Monitor
+                        </div>
+                        <div class="component-item">
+                            <i class="fas fa-keyboard component-icon"></i>
+                            Teclado
+                        </div>
+                        <div class="component-item">
+                            <i class="fas fa-mouse component-icon"></i>
+                            Mouse
+                        </div>
+                        <div class="component-item">
+                            <i class="fas fa-microchip component-icon"></i>
+                            CPU
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+

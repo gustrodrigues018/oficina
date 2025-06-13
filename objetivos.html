@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Objetivos da Aula</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <style>
+        .slide-container {
+            width: 1280px;
+            min-height: 720px;
+            background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            padding: 60px;
+            position: relative;
+        }
+        .header {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+        .title {
+            font-size: 3rem;
+            font-weight: 800;
+            color: #1e40af;
+            margin-bottom: 15px;
+        }
+        .subtitle {
+            font-size: 1.3rem;
+            color: #64748b;
+        }
+        .objectives-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 30px;
+            flex: 1;
+        }
+        .objective-card {
+            background: white;
+            border-radius: 20px;
+            padding: 30px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            border-left: 6px solid #3b82f6;
+            transition: transform 0.3s ease;
+        }
+        .objective-card:hover {
+            transform: translateY(-5px);
+        }
+        .objective-icon {
+            background: linear-gradient(135deg, #3b82f6, #1d4ed8);
+            color: white;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            margin-bottom: 20px;
+        }
+        .objective-title {
+            font-size: 1.4rem;
+            font-weight: 700;
+            color: #1e40af;
+            margin-bottom: 15px;
+        }
+        .objective-description {
+            color: #64748b;
+            line-height: 1.6;
+            font-size: 1rem;
+        }
+        .bottom-note {
+            text-align: center;
+            margin-top: 40px;
+            padding: 20px;
+            background: rgba(59, 130, 246, 0.1);
+            border-radius: 15px;
+            color: #1e40af;
+            font-weight: 600;
+        }
+    </style>
+</head>
+<body>
+    <div class="slide-container">
+        <div class="header">
+            <h1 class="title">Objetivos da Aula</h1>
+            <p class="subtitle">O que você vai aprender hoje</p>
+        </div>
+        
+        <div class="objectives-grid">
+            <div class="objective-card">
+                <div class="objective-icon">
+                    <i class="fas fa-desktop"></i>
+                </div>
+                <h3 class="objective-title">Compreender o Computador</h3>
+                <p class="objective-description">
+                    Entender os componentes básicos de um computador e a diferença entre hardware e software
+                </p>
+            </div>
+            
+            <div class="objective-card">
+                <div class="objective-icon">
+                    <i class="fas fa-mouse-pointer"></i>
+                </div>
+                <h3 class="objective-title">Navegar pelo Sistema</h3>
+                <p class="objective-description">
+                    Dominar a interface do sistema operacional e seus elementos principais
+                </p>
+            </div>
+            
+            <div class="objective-card">
+                <div class="objective-icon">
+                    <i class="fas fa-folder"></i>
+                </div>
+                <h3 class="objective-title">Gerenciar Arquivos</h3>
+                <p class="objective-description">
+                    Organizar, copiar, mover e gerenciar arquivos e pastas de forma eficiente
+                </p>
+            </div>
+            
+            <div class="objective-card">
+                <div class="objective-icon">
+                    <i class="fas fa-keyboard"></i>
+                </div>
+                <h3 class="objective-title">Usar Atalhos</h3>
+                <p class="objective-description">
+                    Utilizar atalhos de teclado para agilizar o trabalho e aumentar a produtividade
+                </p>
+            </div>
+        </div>
+        
+        <div class="bottom-note">
+            <i class="fas fa-target mr-2"></i>
+            Ao final desta aula, você terá confiança para usar o computador de forma eficiente!
+        </div>
+    </div>
+</body>
+</html>
+

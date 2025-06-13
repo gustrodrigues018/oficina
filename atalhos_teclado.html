@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atalhos de Teclado Essenciais</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <style>
+        .slide-container {
+            width: 1280px;
+            min-height: 720px;
+            background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            padding: 60px;
+        }
+        .title {
+            font-size: 3rem;
+            font-weight: 800;
+            color: #1e40af;
+            text-align: center;
+            margin-bottom: 50px;
+        }
+        .content-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 40px;
+            flex: 1;
+            align-items: center;
+        }
+        .text-block {
+            background: white;
+            border-radius: 20px;
+            padding: 30px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            border-left: 6px solid #3b82f6;
+        }
+        .text-block h3 {
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: #1e40af;
+            margin-bottom: 15px;
+        }
+        .text-block p {
+            font-size: 1.1rem;
+            color: #374151;
+            line-height: 1.6;
+        }
+        .shortcut-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+        }
+        .shortcut-card {
+            background: white;
+            border-radius: 15px;
+            padding: 20px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+            display: flex;
+            align-items: center;
+            border: 1px solid #e2e8f0;
+        }
+        .shortcut-icon {
+            font-size: 2rem;
+            color: #3b82f6;
+            margin-right: 15px;
+        }
+        .shortcut-text {
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: #374151;
+        }
+        .shortcut-key {
+            background: #e0e7ff;
+            padding: 5px 10px;
+            border-radius: 5px;
+            font-family: monospace;
+            font-weight: 700;
+            color: #1e40af;
+        }
+    </style>
+</head>
+<body>
+    <div class="slide-container">
+        <h1 class="title">Atalhos de Teclado Essenciais</h1>
+        
+        <div class="content-grid">
+            <div class="text-block">
+                <h3>Agilize seu Trabalho!</h3>
+                <p>
+                    Atalhos de teclado são combinações de teclas que executam comandos 
+                    rapidamente, sem precisar usar o mouse. Eles são como "superpoderes" 
+                    que economizam muito tempo no seu dia a dia com o computador.
+                </p>
+                <p class="mt-4">
+                    Dominar esses atalhos fará você parecer um profissional e 
+                    aumentará sua produtividade em qualquer tarefa!
+                </p>
+            </div>
+            
+            <div class="shortcut-grid">
+                <div class="shortcut-card">
+                    <div class="shortcut-icon"><i class="fas fa-copy"></i></div>
+                    <p class="shortcut-text"><span class="shortcut-key">Ctrl + C</span>: Copiar</p>
+                </div>
+                <div class="shortcut-card">
+                    <div class="shortcut-icon"><i class="fas fa-paste"></i></div>
+                    <p class="shortcut-text"><span class="shortcut-key">Ctrl + V</span>: Colar</p>
+                </div>
+                <div class="shortcut-card">
+                    <div class="shortcut-icon"><i class="fas fa-cut"></i></div>
+                    <p class="shortcut-text"><span class="shortcut-key">Ctrl + X</span>: Recortar</p>
+                </div>
+                <div class="shortcut-card">
+                    <div class="shortcut-icon"><i class="fas fa-undo"></i></div>
+                    <p class="shortcut-text"><span class="shortcut-key">Ctrl + Z</span>: Desfazer</p>
+                </div>
+                <div class="shortcut-card">
+                    <div class="shortcut-icon"><i class="fas fa-save"></i></div>
+                    <p class="shortcut-text"><span class="shortcut-key">Ctrl + S</span>: Salvar</p>
+                </div>
+                <div class="shortcut-card">
+                    <div class="shortcut-icon"><i class="fas fa-window-restore"></i></div>
+                    <p class="shortcut-text"><span class="shortcut-key">Alt + Tab</span>: Alternar Janelas</p>
+                </div>
+                <div class="shortcut-card">
+                    <div class="shortcut-icon"><i class="fas fa-desktop"></i></div>
+                    <p class="shortcut-text"><span class="shortcut-key">Windows + D</span>: Mostrar Área de Trabalho</p>
+                </div>
+                <div class="shortcut-card">
+                    <div class="shortcut-icon"><i class="fas fa-print"></i></div>
+                    <p class="shortcut-text"><span class="shortcut-key">Ctrl + P</span>: Imprimir</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+

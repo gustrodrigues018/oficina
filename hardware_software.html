@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hardware vs Software</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <style>
+        .slide-container {
+            width: 1280px;
+            min-height: 720px;
+            background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            padding: 60px;
+        }
+        .title {
+            font-size: 3rem;
+            font-weight: 800;
+            color: #1e40af;
+            text-align: center;
+            margin-bottom: 50px;
+        }
+        .comparison-container {
+            display: flex;
+            gap: 40px;
+            flex: 1;
+        }
+        .comparison-side {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+        }
+        .side-header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .side-title {
+            font-size: 2.5rem;
+            font-weight: 800;
+            margin-bottom: 15px;
+        }
+        .hardware-title {
+            color: #dc2626;
+        }
+        .software-title {
+            color: #059669;
+        }
+        .side-subtitle {
+            font-size: 1.3rem;
+            color: #64748b;
+            font-weight: 600;
+        }
+        .content-card {
+            background: white;
+            border-radius: 20px;
+            padding: 30px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+        }
+        .hardware-card {
+            border-left: 6px solid #dc2626;
+        }
+        .software-card {
+            border-left: 6px solid #059669;
+        }
+        .analogy-section {
+            text-align: center;
+            margin-bottom: 25px;
+        }
+        .analogy-icon {
+            font-size: 4rem;
+            margin-bottom: 15px;
+        }
+        .hardware-icon {
+            color: #dc2626;
+        }
+        .software-icon {
+            color: #059669;
+        }
+        .analogy-text {
+            font-size: 1.2rem;
+            font-weight: 700;
+            color: #374151;
+        }
+        .examples-section {
+            flex: 1;
+        }
+        .examples-title {
+            font-size: 1.3rem;
+            font-weight: 700;
+            margin-bottom: 20px;
+            color: #374151;
+        }
+        .examples-list {
+            display: grid;
+            gap: 12px;
+        }
+        .example-item {
+            display: flex;
+            align-items: center;
+            padding: 12px;
+            border-radius: 10px;
+            font-weight: 600;
+        }
+        .hardware-example {
+            background: #fef2f2;
+            color: #dc2626;
+        }
+        .software-example {
+            background: #f0fdf4;
+            color: #059669;
+        }
+        .example-icon {
+            margin-right: 12px;
+            font-size: 1.2rem;
+        }
+        .vs-divider {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 80px;
+        }
+        .vs-circle {
+            background: linear-gradient(135deg, #3b82f6, #1d4ed8);
+            color: white;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            font-weight: 800;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        }
+    </style>
+</head>
+<body>
+    <div class="slide-container">
+        <h1 class="title">Hardware vs Software</h1>
+        
+        <div class="comparison-container">
+            <div class="comparison-side">
+                <div class="side-header">
+                    <h2 class="side-title hardware-title">Hardware</h2>
+                    <p class="side-subtitle">Corpo Físico</p>
+                </div>
+                
+                <div class="content-card hardware-card">
+                    <div class="analogy-section">
+                        <i class="fas fa-hammer analogy-icon hardware-icon"></i>
+                        <p class="analogy-text">Partes que você pode tocar</p>
+                    </div>
+                    
+                    <div class="examples-section">
+                        <h3 class="examples-title">Exemplos:</h3>
+                        <div class="examples-list">
+                            <div class="example-item hardware-example">
+                                <i class="fas fa-tv example-icon"></i>
+                                Monitor
+                            </div>
+                            <div class="example-item hardware-example">
+                                <i class="fas fa-keyboard example-icon"></i>
+                                Teclado
+                            </div>
+                            <div class="example-item hardware-example">
+                                <i class="fas fa-mouse example-icon"></i>
+                                Mouse
+                            </div>
+                            <div class="example-item hardware-example">
+                                <i class="fas fa-microchip example-icon"></i>
+                                Processador
+                            </div>
+                            <div class="example-item hardware-example">
+                                <i class="fas fa-memory example-icon"></i>
+                                Memória RAM
+                            </div>
+                            <div class="example-item hardware-example">
+                                <i class="fas fa-hdd example-icon"></i>
+                                HD/SSD
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="vs-divider">
+                <div class="vs-circle">VS</div>
+            </div>
+            
+            <div class="comparison-side">
+                <div class="side-header">
+                    <h2 class="side-title software-title">Software</h2>
+                    <p class="side-subtitle">Mente/Inteligência</p>
+                </div>
+                
+                <div class="content-card software-card">
+                    <div class="analogy-section">
+                        <i class="fas fa-brain analogy-icon software-icon"></i>
+                        <p class="analogy-text">Programas e instruções</p>
+                    </div>
+                    
+                    <div class="examples-section">
+                        <h3 class="examples-title">Exemplos:</h3>
+                        <div class="examples-list">
+                            <div class="example-item software-example">
+                                <i class="fab fa-windows example-icon"></i>
+                                Windows
+                            </div>
+                            <div class="example-item software-example">
+                                <i class="fas fa-file-word example-icon"></i>
+                                Microsoft Word
+                            </div>
+                            <div class="example-item software-example">
+                                <i class="fab fa-chrome example-icon"></i>
+                                Google Chrome
+                            </div>
+                            <div class="example-item software-example">
+                                <i class="fas fa-gamepad example-icon"></i>
+                                Jogos
+                            </div>
+                            <div class="example-item software-example">
+                                <i class="fab fa-spotify example-icon"></i>
+                                Spotify
+                            </div>
+                            <div class="example-item software-example">
+                                <i class="fab fa-whatsapp example-icon"></i>
+                                WhatsApp
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
